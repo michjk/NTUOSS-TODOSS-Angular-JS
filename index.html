@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>TODOSS</title>
+
+    <link rel="stylesheet" href="//ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<h1><span class="todo">TOD</span><span class="oss"><span class="todo">O</span>SS</span></h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form>
+                <input id="new-todo" type="text" placeholder="What's in your mind?"
+                       autocomplete="off">
+                <input type="submit" class="hidden">
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <ul id="todo-list">
+                <li>
+                    <div class="item done">
+                        <div class="status"></div>
+                        <div class="text">Sample TODO 1.</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="status"></div>
+                        <div class="text">Sample TODO 2.</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="status"></div>
+                        <div class="text">Sample TODO 2.</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row" id="info-bar">
+        <div class="col-xs-6" id="item-count">2 items left.</div>
+        <div class="col-xs-6" id="status-selector">
+            <div class="btn btn-sm active">All</div>
+            <div class="btn btn-sm">Active</div>
+            <div class="btn btn-sm">Done</div>
+        </div>
+    </div>
+</div>
+
+<div id="copyright">
+    <p>Double click to delete an item.</p>
+    <p>Made with &#x2661; by NTUOSS</p>
+</div>
+
+</body>
+</html>

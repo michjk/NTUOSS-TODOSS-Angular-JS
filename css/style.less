@@ -1,0 +1,131 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: #eaeaea;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 60px;
+  color: #666;
+  margin: 60px auto 40px;
+  opacity: 0.7;
+  span.todo {
+    font-weight: 100;
+    color: #196ffa;
+  }
+  span.oss {
+    text-shadow: rgba(255, 255, 255, 0.498039) 1px 2px 0;
+  }
+}
+
+.container {
+  max-width: 600px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 0;
+}
+
+input#new-todo {
+  width: 100%;
+  border: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 50px;
+  height: 60px;
+  padding: 0 20px;
+  .open-sans;
+  color: #666;
+  box-shadow: 0 0 2px #ccc;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+ul#todo-list {
+  padding: 0;
+  margin-bottom: 0;
+  li {
+    display: block;
+    .open-sans;
+    font-weight: 300;
+    .text {
+      padding-left: 50px;
+    }
+    .item {
+      font-size: 24px;
+      line-height: 30px;
+      vertical-align: middle;
+      padding: 15px 0;
+      .text {
+        color: #444;
+      }
+      .status {
+        width: 50px;
+        position: absolute;
+        text-align: center;
+        color: #999;
+        &:after {
+          content: '◯'
+        }
+      }
+      &.done {
+        .text {
+          text-decoration: line-through;
+          color: #999;
+        }
+        .status {
+          &:before {
+            content: '✓ ';
+            position: absolute;
+            margin-left: 5px;
+            color: #7a9833;
+            font-size: 18px;
+          }
+        }
+      }
+      border-bottom: 1px solid #cfcfcf;
+    }
+  }
+}
+
+#info-bar {
+  height: 40px;
+  line-height: 40px;
+  * {
+    .open-sans;
+  }
+}
+
+#item-count {
+  padding: 0 40px;
+  font-size: 13px;
+  color: #999;
+}
+
+#status-selector {
+  padding-right: 40px;
+  text-align: right;
+  .btn.active {
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+  .btn-sm {
+    padding: 3px 10px;
+  }
+}
+
+#copyright {
+  .open-sans;
+  text-align: center;
+  font-size: 11px;
+  text-shadow: rgba(255, 255, 255, 0.498039) 0 1px 0;
+  margin: 80px auto 80px;
+  color: #666;
+}
